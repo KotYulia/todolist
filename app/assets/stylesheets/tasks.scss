@@ -1,0 +1,89 @@
+h1 {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+#new_link {
+  color: #004085;
+  font-size: 20px;
+  text-decoration: none;
+  &:hover {
+    color: #056085;
+  }
+}
+
+form {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+#complete_tasks form {
+  label { text-decoration: line-through; }
+}
+ input {
+   cursor: pointer;
+   background-color: transparent;
+   color: #000;
+   border: 1px solid #3a4ddc;
+   border-radius: 20px;
+   font-size: 18px;
+}
+
+.content-block form {
+  margin-top: -5px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  width: 18%;
+  padding: 10px;
+}
+
+.check-block {
+  text-align: center;
+}
+
+.edit-delete-block {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.edit_task {
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 2px;
+    margin: 0 5px;
+    color: #000;
+    cursor: pointer;
+    &:hover {
+      color: #004085;
+    }
+  }
+}
+
+form.row {
+  border: 1px solid #3a4ddc;
+  padding: 10px 0 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #15c2f94d;
+}
+
+.tasks {
+  list-style: none;
+  padding: 0;
+
+
+}
+

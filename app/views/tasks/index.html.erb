@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>To Do List</h1>
+    <%= link_to "New Task", new_task_path, id: "new_link", remote: true %>
+
+    <h2>Incomplete Tasks:</h2>
+    <ul class="tasks" id="incomplete_tasks">
+      <%= render @incomplete_tasks %>
+    </ul>
+
+    <h2>Comlpete Tasks:</h2>
+    <ul class="tasks" id="complete_tasks">
+      <%= render @complete_tasks %>
+    </ul>
+  </div>
+</div>

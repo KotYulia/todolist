@@ -1,0 +1,20 @@
+<li>
+    <%= form_for task, html: {class:'edit_task row'}, remote: true do |f| %>
+      <div class="col-md-1 check-block">
+        <%= f.check_box :complete %>
+        <%= f.submit "Update" %>
+      </div>
+      <div class="col-md-9 content-block">
+         <%= f.label :complete, task.name %>
+      </div>
+      <div class="col-md-2 edit-delete-block">
+         <%= link_to '', edit_task_path(task),
+                         remote: true,
+                         class: 'edit_link fa fa-pencil' %> |
+         <%= link_to '', task, method: :delete,
+                                    data: {confirm: "Are you sure?"},
+                                    class: 'fa fa-bomb',
+                                    remote: true %>
+      </div>
+    <% end %>
+</li>
